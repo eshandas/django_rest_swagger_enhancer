@@ -13,4 +13,8 @@ setup(
     download_url='https://github.com/eshandas/django_rest_swagger_enhancer/archive/0.0.1.tar.gz',  # Create a tag in github
     keywords=['django', 'django rest framework', 'swagger', 'django rest swagger'],
     classifiers=[],
+    install_requires=[
+        'Django>=1.11',
+        'djangorestframework>=3.6.3',
+        'django-rest-swagger>=2.1.2'],
 )
