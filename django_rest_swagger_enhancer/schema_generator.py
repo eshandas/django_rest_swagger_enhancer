@@ -1,7 +1,8 @@
+import coreschema
+
 from rest_framework.schemas import SchemaGenerator
 from rest_framework.compat import (
     coreapi,
-    coreschema,
 )
 
 from rest_framework import schemas
