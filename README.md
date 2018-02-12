@@ -26,6 +26,19 @@ pip install django_rest_swagger_enhancer
 
 ## Setup
 
+* If swagger needs to be served over https, make sure the following setting is there in the settings file
+
+```
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# Read more: https://docs.djangoproject.com/en/1.11/ref/settings/#secure-proxy-ssl-header
+```
+
+And put the following in nginx (as it gets swallowed by it):
+
+```
+proxy_set_header X-Forwarded-Proto $scheme;
+```
+
 * In urls.py, add an endpoint for Swagger like the following and you should start seeing textareas in POST, PUT and PATCH:
 
 ```
