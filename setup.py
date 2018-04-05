@@ -1,5 +1,4 @@
 from setuptools import find_packages, setup
-# Read more here: https://www.codementor.io/arpitbhayani/host-your-python-package-using-github-on-pypi-du107t7ku
 
 setup(
     name='django_rest_swagger_enhancer',
